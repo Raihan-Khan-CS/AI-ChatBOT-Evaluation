@@ -1,0 +1,111 @@
+# ============================================================
+# AI Chatbot Evaluation Framework - Configuration
+# CSE 533 - Machine Learning Project
+# ============================================================
+
+project:
+  name: "AI Chatbot Information Quality Evaluation"
+  version: "1.0.0"
+
+# ---- Chatbots to evaluate ----
+chatbots:
+  - name: "ChatGPT"
+    id: "chatgpt"
+    api_key_env: "OPENAI_API_KEY"       # Set in environment
+    model: "gpt-4o"
+    endpoint: "https://api.openai.com/v1/chat/completions"
+    enabled: true
+
+  - name: "Gemini"
+    id: "gemini"
+    api_key_env: "GOOGLE_API_KEY"
+    model: "gemini-pro"
+    endpoint: "https://generativelanguage.googleapis.com/v1beta"
+    enabled: true
+
+  - name: "Claude"
+    id: "claude"
+    api_key_env: "ANTHROPIC_API_KEY"
+    model: "claude-sonnet-4-20250514"
+    endpoint: "https://api.anthropic.com/v1/messages"
+    enabled: true
+
+  - name: "Grok"
+    id: "grok"
+    api_key_env: "XAI_API_KEY"
+    model: "grok-2"
+    endpoint: "https://api.x.ai/v1/chat/completions"
+    enabled: true
+
+  - name: "DeepSeek"
+    id: "deepseek"
+    api_key_env: "DEEPSEEK_API_KEY"
+    model: "deepseek-chat"
+    endpoint: "https://api.deepseek.com/v1/chat/completions"
+    enabled: true
+
+# ---- Query configuration ----
+queries:
+  domains:
+    - "Science"
+    - "History"
+    - "Current Events"
+    - "Technology"
+    - "General Knowledge"
+  types:
+    - "Factual"
+    - "Definitional"
+    - "Comparative"
+    - "Recent Events"
+
+# ---- Evaluation settings ----
+evaluation:
+  similarity_model: "all-MiniLM-L6-v2"
+  spacy_model: "en_core_web_sm"
+  accuracy_threshold: 0.75
+  similarity_threshold: 0.70
+  scoring:
+    scale: 5               # 0-5 Likert scale
+    weights:
+      accuracy: 0.4
+      authenticity: 0.3
+      up_to_dateness: 0.3
+
+# ---- Ground truth sources ----
+ground_truth:
+  sources:
+    - "Wikipedia"
+    - "Britannica"
+    - "Reuters"
+    - "BBC"
+    - "PubMed"
+    - "Government Websites"
+
+# ---- Statistical analysis ----
+statistics:
+  significance_level: 0.05
+  correction_method: "bonferroni"
+  tests:
+    - "anova"
+    - "t_test_pairwise"
+    - "correlation"
+
+# ---- Output paths ----
+paths:
+  queries: "data/queries/evaluation_queries.json"
+  responses: "data/responses/"
+  ground_truth: "data/ground_truth/"
+  results: "data/results/"
+  figures: "data/results/figures/"
+
+# ---- Visualization ----
+visualization:
+  style: "seaborn-v0_8-whitegrid"
+  figsize: [12, 8]
+  dpi: 150
+  colors:
+    ChatGPT: "#10A37F"
+    Gemini: "#4285F4"
+    Claude: "#D97757"
+    Grok: "#000000"
+    DeepSeek: "#4A90D9"

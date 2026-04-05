@@ -1,0 +1,512 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "created": "2025-06-01",
+    "description": "Curated evaluation queries for AI chatbot information quality assessment",
+    "total_queries": 50,
+    "domains": ["Science", "History", "Current Events", "Technology", "General Knowledge"],
+    "query_types": ["Factual", "Definitional", "Comparative", "Recent Events"]
+  },
+  "queries": [
+    {
+      "id": "SCI_F_001",
+      "domain": "Science",
+      "type": "Factual",
+      "question": "What is the speed of light in a vacuum in meters per second?",
+      "ground_truth": "The speed of light in a vacuum is approximately 299,792,458 meters per second.",
+      "ground_truth_source": "NIST (National Institute of Standards and Technology)",
+      "ground_truth_date": "2024-01-01",
+      "difficulty": "Easy"
+    },
+    {
+      "id": "SCI_F_002",
+      "domain": "Science",
+      "type": "Factual",
+      "question": "How many chromosomes does a normal human cell contain?",
+      "ground_truth": "A normal human cell contains 46 chromosomes (23 pairs).",
+      "ground_truth_source": "NIH - National Human Genome Research Institute",
+      "ground_truth_date": "2024-01-01",
+      "difficulty": "Easy"
+    },
+    {
+      "id": "SCI_D_003",
+      "domain": "Science",
+      "type": "Definitional",
+      "question": "What is CRISPR-Cas9 and how does it work?",
+      "ground_truth": "CRISPR-Cas9 is a genome editing tool that allows scientists to alter DNA sequences and modify gene function. It uses a guide RNA to direct the Cas9 enzyme to a specific location in the genome, where it cuts both strands of the DNA, allowing genes to be removed, added, or altered.",
+      "ground_truth_source": "Nature Reviews Genetics / NIH",
+      "ground_truth_date": "2024-06-01",
+      "difficulty": "Medium"
+    },
+    {
+      "id": "SCI_F_004",
+      "domain": "Science",
+      "type": "Factual",
+      "question": "What is the chemical formula for photosynthesis?",
+      "ground_truth": "6CO2 + 6H2O + light energy → C6H12O6 + 6O2. Six molecules of carbon dioxide and six molecules of water, using light energy, produce one molecule of glucose and six molecules of oxygen.",
+      "ground_truth_source": "Khan Academy / Biology textbooks",
+      "ground_truth_date": "2024-01-01",
+      "difficulty": "Easy"
+    },
+    {
+      "id": "SCI_C_005",
+      "domain": "Science",
+      "type": "Comparative",
+      "question": "What are the key differences between DNA and RNA?",
+      "ground_truth": "DNA is double-stranded, uses deoxyribose sugar, and contains thymine. RNA is single-stranded, uses ribose sugar, and contains uracil instead of thymine. DNA stores genetic information long-term, while RNA plays roles in protein synthesis and gene regulation.",
+      "ground_truth_source": "Molecular Biology of the Cell (Alberts et al.)",
+      "ground_truth_date": "2024-01-01",
+      "difficulty": "Medium"
+    },
+    {
+      "id": "SCI_F_006",
+      "domain": "Science",
+      "type": "Factual",
+      "question": "What is the approximate age of the Earth?",
+      "ground_truth": "The Earth is approximately 4.54 billion years old, based on radiometric dating of meteorites and the oldest known minerals.",
+      "ground_truth_source": "USGS (United States Geological Survey)",
+      "ground_truth_date": "2024-01-01",
+      "difficulty": "Easy"
+    },
+    {
+      "id": "SCI_D_007",
+      "domain": "Science",
+      "type": "Definitional",
+      "question": "What is quantum entanglement?",
+      "ground_truth": "Quantum entanglement is a phenomenon where two or more particles become interconnected in such a way that the quantum state of each particle cannot be described independently. When one entangled particle is measured, it instantly influences the state of its partner, regardless of the distance between them.",
+      "ground_truth_source": "American Physical Society / Physics textbooks",
+      "ground_truth_date": "2024-01-01",
+      "difficulty": "Medium"
+    },
+    {
+      "id": "SCI_R_008",
+      "domain": "Science",
+      "type": "Recent Events",
+      "question": "What were the major scientific breakthroughs in 2024?",
+      "ground_truth": "Major 2024 breakthroughs included advances in room-temperature superconductors research, new weight-loss drugs (GLP-1 agonists), AI protein structure prediction improvements (AlphaFold3), and progress in nuclear fusion energy research.",
+      "ground_truth_source": "Nature / Science journals year-in-review",
+      "ground_truth_date": "2025-01-15",
+      "difficulty": "Hard"
+    },
+    {
+      "id": "SCI_F_009",
+      "domain": "Science",
+      "type": "Factual",
+      "question": "What is the largest organ in the human body?",
+      "ground_truth": "The skin is the largest organ in the human body, covering approximately 1.5-2 square meters in adults and accounting for about 15% of body weight.",
+      "ground_truth_source": "Gray's Anatomy / NIH",
+      "ground_truth_date": "2024-01-01",
+      "difficulty": "Easy"
+    },
+    {
+      "id": "SCI_C_010",
+      "domain": "Science",
+      "type": "Comparative",
+      "question": "How does nuclear fission differ from nuclear fusion?",
+      "ground_truth": "Nuclear fission splits heavy atomic nuclei into lighter ones, releasing energy (used in current nuclear power plants). Nuclear fusion combines light nuclei into heavier ones, releasing even more energy (powers the sun). Fusion requires extremely high temperatures and pressures, and produces less radioactive waste than fission.",
+      "ground_truth_source": "DOE Office of Science",
+      "ground_truth_date": "2024-01-01",
+      "difficulty": "Medium"
+    },
+    {
+      "id": "HIS_F_011",
+      "domain": "History",
+      "type": "Factual",
+      "question": "When did World War II end?",
+      "ground_truth": "World War II ended on September 2, 1945, when Japan formally surrendered aboard the USS Missouri in Tokyo Bay. The war in Europe ended on May 8, 1945 (V-E Day) with Germany's unconditional surrender.",
+      "ground_truth_source": "Encyclopaedia Britannica",
+      "ground_truth_date": "2024-01-01",
+      "difficulty": "Easy"
+    },
+    {
+      "id": "HIS_F_012",
+      "domain": "History",
+      "type": "Factual",
+      "question": "Who was the first person to walk on the Moon and in which year?",
+      "ground_truth": "Neil Armstrong was the first person to walk on the Moon on July 20, 1969, during the Apollo 11 mission. He was followed by Buzz Aldrin.",
+      "ground_truth_source": "NASA",
+      "ground_truth_date": "2024-01-01",
+      "difficulty": "Easy"
+    },
+    {
+      "id": "HIS_D_013",
+      "domain": "History",
+      "type": "Definitional",
+      "question": "What was the Renaissance and when did it occur?",
+      "ground_truth": "The Renaissance was a cultural, artistic, and intellectual movement that began in Italy in the 14th century and spread across Europe through the 17th century. It marked a transition from the medieval period to modernity, characterized by renewed interest in classical Greek and Roman culture, humanism, scientific inquiry, and artistic innovation.",
+      "ground_truth_source": "Encyclopaedia Britannica / Oxford Reference",
+      "ground_truth_date": "2024-01-01",
+      "difficulty": "Medium"
+    },
+    {
+      "id": "HIS_C_014",
+      "domain": "History",
+      "type": "Comparative",
+      "question": "What are the key differences between the French Revolution and the American Revolution?",
+      "ground_truth": "The American Revolution (1775-1783) was primarily a colonial independence movement against British rule, resulting in a constitutional republic. The French Revolution (1789-1799) was an internal uprising against the monarchy and feudal system, marked by more radical social upheaval, the Reign of Terror, and eventual rise of Napoleon. The American Revolution was relatively more moderate and stable in outcome.",
+      "ground_truth_source": "Oxford History of the French Revolution / Academic sources",
+      "ground_truth_date": "2024-01-01",
+      "difficulty": "Hard"
+    },
+    {
+      "id": "HIS_F_015",
+      "domain": "History",
+      "type": "Factual",
+      "question": "When was the Berlin Wall built and when did it fall?",
+      "ground_truth": "The Berlin Wall was built on August 13, 1961, by the German Democratic Republic (East Germany). It fell on November 9, 1989, leading to German reunification on October 3, 1990.",
+      "ground_truth_source": "Encyclopaedia Britannica / German Historical Institute",
+      "ground_truth_date": "2024-01-01",
+      "difficulty": "Easy"
+    },
+    {
+      "id": "HIS_F_016",
+      "domain": "History",
+      "type": "Factual",
+      "question": "What year did Bangladesh gain independence and from which country?",
+      "ground_truth": "Bangladesh gained independence on December 16, 1971, from Pakistan (formerly West Pakistan) following the Bangladesh Liberation War. Sheikh Mujibur Rahman is considered the founding father of Bangladesh.",
+      "ground_truth_source": "Encyclopaedia Britannica / Government of Bangladesh",
+      "ground_truth_date": "2024-01-01",
+      "difficulty": "Easy"
+    },
+    {
+      "id": "HIS_F_017",
+      "domain": "History",
+      "type": "Factual",
+      "question": "Who discovered penicillin and in what year?",
+      "ground_truth": "Alexander Fleming discovered penicillin in 1928 at St. Mary's Hospital in London. He noticed that a mold (Penicillium notatum) had contaminated one of his petri dishes and killed the surrounding bacteria.",
+      "ground_truth_source": "Nobel Prize organization / Encyclopaedia Britannica",
+      "ground_truth_date": "2024-01-01",
+      "difficulty": "Easy"
+    },
+    {
+      "id": "HIS_C_018",
+      "domain": "History",
+      "type": "Comparative",
+      "question": "Compare the causes of World War I and World War II.",
+      "ground_truth": "WWI (1914-1918) was caused by militarism, alliance systems, imperialism, and nationalism, triggered by the assassination of Archduke Franz Ferdinand. WWII (1939-1945) was caused by the Treaty of Versailles' harsh terms, the rise of fascism and Nazism, appeasement policies, and aggressive expansionism by Germany, Italy, and Japan.",
+      "ground_truth_source": "Academic history textbooks / Encyclopaedia Britannica",
+      "ground_truth_date": "2024-01-01",
+      "difficulty": "Hard"
+    },
+    {
+      "id": "HIS_R_019",
+      "domain": "History",
+      "type": "Recent Events",
+      "question": "What significant archaeological discoveries were made in 2024?",
+      "ground_truth": "This requires up-to-date information from 2024 archaeological reports and news sources.",
+      "ground_truth_source": "Nature / Science / Archaeological journals",
+      "ground_truth_date": "2025-01-01",
+      "difficulty": "Hard"
+    },
+    {
+      "id": "HIS_F_020",
+      "domain": "History",
+      "type": "Factual",
+      "question": "What was the Silk Road and what was its significance?",
+      "ground_truth": "The Silk Road was a network of ancient trade routes connecting East Asia to the Mediterranean, active from around the 2nd century BCE to the 15th century CE. It facilitated trade in silk, spices, precious metals, and ideas including religions, technologies, and cultural practices between civilizations.",
+      "ground_truth_source": "UNESCO / Encyclopaedia Britannica",
+      "ground_truth_date": "2024-01-01",
+      "difficulty": "Medium"
+    },
+    {
+      "id": "CE_R_021",
+      "domain": "Current Events",
+      "type": "Recent Events",
+      "question": "Who won the 2024 US Presidential Election?",
+      "ground_truth": "Donald Trump won the 2024 US Presidential Election, defeating Kamala Harris. He was inaugurated as the 47th President of the United States on January 20, 2025.",
+      "ground_truth_source": "Associated Press / Reuters",
+      "ground_truth_date": "2025-01-20",
+      "difficulty": "Easy"
+    },
+    {
+      "id": "CE_R_022",
+      "domain": "Current Events",
+      "type": "Recent Events",
+      "question": "Which country hosted the 2024 Summer Olympics?",
+      "ground_truth": "France hosted the 2024 Summer Olympics in Paris, from July 26 to August 11, 2024.",
+      "ground_truth_source": "International Olympic Committee (IOC)",
+      "ground_truth_date": "2024-08-12",
+      "difficulty": "Easy"
+    },
+    {
+      "id": "CE_R_023",
+      "domain": "Current Events",
+      "type": "Recent Events",
+      "question": "What is the current global population as of 2024?",
+      "ground_truth": "The global population reached approximately 8.1 billion people by the end of 2024, according to the United Nations World Population Prospects.",
+      "ground_truth_source": "United Nations Population Division",
+      "ground_truth_date": "2024-12-01",
+      "difficulty": "Medium"
+    },
+    {
+      "id": "CE_R_024",
+      "domain": "Current Events",
+      "type": "Recent Events",
+      "question": "What major AI developments occurred in 2024?",
+      "ground_truth": "Major 2024 AI developments included the release of GPT-4o and Claude 3.5, advances in multimodal AI, progress in AI agents and reasoning capabilities, increased AI regulation discussions globally, and growing adoption of AI in enterprise applications.",
+      "ground_truth_source": "Tech news sources / Company announcements",
+      "ground_truth_date": "2025-01-01",
+      "difficulty": "Hard"
+    },
+    {
+      "id": "CE_F_025",
+      "domain": "Current Events",
+      "type": "Factual",
+      "question": "Who is the current Secretary-General of the United Nations?",
+      "ground_truth": "António Guterres is the current Secretary-General of the United Nations, serving since January 1, 2017. He was reappointed for a second term starting January 1, 2022.",
+      "ground_truth_source": "United Nations Official Website",
+      "ground_truth_date": "2025-01-01",
+      "difficulty": "Easy"
+    },
+    {
+      "id": "CE_R_026",
+      "domain": "Current Events",
+      "type": "Recent Events",
+      "question": "What were the major natural disasters in 2024?",
+      "ground_truth": "This requires up-to-date information from 2024 disaster reports and news sources.",
+      "ground_truth_source": "UNDRR / Reuters / AP",
+      "ground_truth_date": "2025-01-01",
+      "difficulty": "Hard"
+    },
+    {
+      "id": "CE_F_027",
+      "domain": "Current Events",
+      "type": "Factual",
+      "question": "What is the current inflation rate in the United States?",
+      "ground_truth": "This requires real-time economic data from Bureau of Labor Statistics.",
+      "ground_truth_source": "Bureau of Labor Statistics (BLS)",
+      "ground_truth_date": "2025-01-01",
+      "difficulty": "Medium"
+    },
+    {
+      "id": "CE_R_028",
+      "domain": "Current Events",
+      "type": "Recent Events",
+      "question": "Who won the Nobel Peace Prize in 2024?",
+      "ground_truth": "The 2024 Nobel Peace Prize was awarded to Nihon Hidankyo, the Japanese organization of atomic bomb survivors, for their efforts toward a world free of nuclear weapons.",
+      "ground_truth_source": "Nobel Prize official website",
+      "ground_truth_date": "2024-10-11",
+      "difficulty": "Medium"
+    },
+    {
+      "id": "CE_R_029",
+      "domain": "Current Events",
+      "type": "Recent Events",
+      "question": "Who won the 2024 Cricket T20 World Cup?",
+      "ground_truth": "India won the 2024 ICC Men's T20 World Cup, held in the West Indies and the United States in June 2024, defeating South Africa in the final.",
+      "ground_truth_source": "ICC (International Cricket Council)",
+      "ground_truth_date": "2024-06-29",
+      "difficulty": "Easy"
+    },
+    {
+      "id": "CE_R_030",
+      "domain": "Current Events",
+      "type": "Recent Events",
+      "question": "Who won the 2022 FIFA World Cup?",
+      "ground_truth": "Argentina won the 2022 FIFA World Cup, held in Qatar, defeating France in the final on December 18, 2022.",
+      "ground_truth_source": "FIFA",
+      "ground_truth_date": "2022-12-18",
+      "difficulty": "Easy"
+    },
+    {
+      "id": "TECH_F_031",
+      "domain": "Technology",
+      "type": "Factual",
+      "question": "What programming language is most commonly used for machine learning?",
+      "ground_truth": "Python is the most commonly used programming language for machine learning, due to its extensive libraries (TensorFlow, PyTorch, scikit-learn, NumPy, Pandas) and large community support.",
+      "ground_truth_source": "Stack Overflow Developer Survey / GitHub Octoverse",
+      "ground_truth_date": "2024-06-01",
+      "difficulty": "Easy"
+    },
+    {
+      "id": "TECH_D_032",
+      "domain": "Technology",
+      "type": "Definitional",
+      "question": "What is a Large Language Model (LLM)?",
+      "ground_truth": "A Large Language Model (LLM) is a type of artificial intelligence model trained on vast amounts of text data to understand and generate human-like text. LLMs use transformer architectures with billions of parameters and learn patterns, grammar, facts, and reasoning from their training data. Examples include GPT-4, Claude, Gemini, and LLaMA.",
+      "ground_truth_source": "Academic papers / AI research organizations",
+      "ground_truth_date": "2024-06-01",
+      "difficulty": "Medium"
+    },
+    {
+      "id": "TECH_C_033",
+      "domain": "Technology",
+      "type": "Comparative",
+      "question": "What are the differences between supervised and unsupervised learning?",
+      "ground_truth": "Supervised learning uses labeled training data where the correct output is known, used for classification and regression tasks. Unsupervised learning uses unlabeled data to find hidden patterns, used for clustering, dimensionality reduction, and anomaly detection. Supervised learning requires more data preparation but typically gives more precise results for defined tasks.",
+      "ground_truth_source": "Machine Learning textbooks (Bishop, Murphy)",
+      "ground_truth_date": "2024-01-01",
+      "difficulty": "Medium"
+    },
+    {
+      "id": "TECH_F_034",
+      "domain": "Technology",
+      "type": "Factual",
+      "question": "When was the first iPhone released?",
+      "ground_truth": "The first iPhone was released on June 29, 2007, by Apple Inc. It was announced by Steve Jobs on January 9, 2007, at Macworld.",
+      "ground_truth_source": "Apple Inc. / Encyclopaedia Britannica",
+      "ground_truth_date": "2024-01-01",
+      "difficulty": "Easy"
+    },
+    {
+      "id": "TECH_D_035",
+      "domain": "Technology",
+      "type": "Definitional",
+      "question": "What is blockchain technology?",
+      "ground_truth": "Blockchain is a decentralized, distributed digital ledger technology that records transactions across multiple computers in a way that ensures records cannot be retroactively altered. Each block contains a cryptographic hash of the previous block, a timestamp, and transaction data, forming an immutable chain.",
+      "ground_truth_source": "IEEE / Academic sources",
+      "ground_truth_date": "2024-01-01",
+      "difficulty": "Medium"
+    },
+    {
+      "id": "TECH_C_036",
+      "domain": "Technology",
+      "type": "Comparative",
+      "question": "Compare TCP and UDP protocols.",
+      "ground_truth": "TCP (Transmission Control Protocol) is connection-oriented, provides reliable ordered delivery, uses error checking and flow control, and is used for web browsing, email, and file transfer. UDP (User Datagram Protocol) is connectionless, provides faster but unreliable delivery, has no guaranteed ordering, and is used for streaming, gaming, and DNS lookups.",
+      "ground_truth_source": "RFC 793 (TCP) / RFC 768 (UDP) / Computer Networking textbooks",
+      "ground_truth_date": "2024-01-01",
+      "difficulty": "Medium"
+    },
+    {
+      "id": "TECH_R_037",
+      "domain": "Technology",
+      "type": "Recent Events",
+      "question": "What is the latest version of Python as of 2024?",
+      "ground_truth": "Python 3.13 was released in October 2024, featuring improvements to the interactive interpreter, experimental free-threaded mode, and a JIT compiler.",
+      "ground_truth_source": "Python.org / Python Software Foundation",
+      "ground_truth_date": "2024-10-07",
+      "difficulty": "Medium"
+    },
+    {
+      "id": "TECH_F_038",
+      "domain": "Technology",
+      "type": "Factual",
+      "question": "What does GPU stand for and what is its primary use in AI?",
+      "ground_truth": "GPU stands for Graphics Processing Unit. While originally designed for rendering graphics, GPUs are widely used in AI and machine learning because their parallel processing architecture is well-suited for the matrix operations required in deep learning model training and inference.",
+      "ground_truth_source": "NVIDIA / IEEE publications",
+      "ground_truth_date": "2024-01-01",
+      "difficulty": "Easy"
+    },
+    {
+      "id": "TECH_R_039",
+      "domain": "Technology",
+      "type": "Recent Events",
+      "question": "What are the latest developments in quantum computing as of 2024?",
+      "ground_truth": "2024 developments in quantum computing included Google's Willow chip achieving below-threshold quantum error correction, IBM advancing its quantum roadmap, and continued progress toward practical quantum advantage applications.",
+      "ground_truth_source": "Nature / Google AI Blog / IBM Research",
+      "ground_truth_date": "2025-01-01",
+      "difficulty": "Hard"
+    },
+    {
+      "id": "TECH_D_040",
+      "domain": "Technology",
+      "type": "Definitional",
+      "question": "What is Retrieval-Augmented Generation (RAG)?",
+      "ground_truth": "RAG (Retrieval-Augmented Generation) is an AI framework that combines information retrieval with text generation. It retrieves relevant documents or passages from an external knowledge base and provides them as context to a language model, which then generates responses grounded in the retrieved information, reducing hallucinations.",
+      "ground_truth_source": "Lewis et al. (2020) / NeurIPS",
+      "ground_truth_date": "2024-06-01",
+      "difficulty": "Medium"
+    },
+    {
+      "id": "GK_F_041",
+      "domain": "General Knowledge",
+      "type": "Factual",
+      "question": "What is the capital of Australia?",
+      "ground_truth": "The capital of Australia is Canberra, not Sydney or Melbourne as commonly mistaken. Canberra was purpose-built as the capital starting in 1913.",
+      "ground_truth_source": "Australian Government / Encyclopaedia Britannica",
+      "ground_truth_date": "2024-01-01",
+      "difficulty": "Easy"
+    },
+    {
+      "id": "GK_F_042",
+      "domain": "General Knowledge",
+      "type": "Factual",
+      "question": "How many continents are there and what are they?",
+      "ground_truth": "There are seven continents: Africa, Antarctica, Asia, Australia (Oceania), Europe, North America, and South America. Some models combine Europe and Asia as Eurasia, resulting in six continents.",
+      "ground_truth_source": "National Geographic / Encyclopaedia Britannica",
+      "ground_truth_date": "2024-01-01",
+      "difficulty": "Easy"
+    },
+    {
+      "id": "GK_D_043",
+      "domain": "General Knowledge",
+      "type": "Definitional",
+      "question": "What is the United Nations and what is its purpose?",
+      "ground_truth": "The United Nations (UN) is an international organization founded on October 24, 1945, with 193 member states. Its purposes include maintaining international peace and security, developing friendly relations among nations, promoting human rights, and coordinating international cooperation on global challenges.",
+      "ground_truth_source": "United Nations Charter / UN.org",
+      "ground_truth_date": "2024-01-01",
+      "difficulty": "Medium"
+    },
+    {
+      "id": "GK_F_044",
+      "domain": "General Knowledge",
+      "type": "Factual",
+      "question": "What is the longest river in the world?",
+      "ground_truth": "The Nile River is traditionally considered the longest river in the world at approximately 6,650 km (4,130 miles), though some recent studies suggest the Amazon River may be longer when measured from its most distant source.",
+      "ground_truth_source": "Encyclopaedia Britannica / National Geographic",
+      "ground_truth_date": "2024-01-01",
+      "difficulty": "Easy"
+    },
+    {
+      "id": "GK_C_045",
+      "domain": "General Knowledge",
+      "type": "Comparative",
+      "question": "What is the difference between weather and climate?",
+      "ground_truth": "Weather refers to short-term atmospheric conditions (temperature, humidity, precipitation, wind) in a specific place over hours to days. Climate is the average weather pattern in a region over long periods (typically 30+ years). Weather is what you experience day-to-day; climate is the long-term trend.",
+      "ground_truth_source": "NOAA / WMO (World Meteorological Organization)",
+      "ground_truth_date": "2024-01-01",
+      "difficulty": "Easy"
+    },
+    {
+      "id": "GK_F_046",
+      "domain": "General Knowledge",
+      "type": "Factual",
+      "question": "What is the boiling point of water at standard atmospheric pressure?",
+      "ground_truth": "The boiling point of water at standard atmospheric pressure (1 atm or 101.325 kPa) is 100 degrees Celsius (212 degrees Fahrenheit or 373.15 Kelvin).",
+      "ground_truth_source": "NIST / Chemistry references",
+      "ground_truth_date": "2024-01-01",
+      "difficulty": "Easy"
+    },
+    {
+      "id": "GK_D_047",
+      "domain": "General Knowledge",
+      "type": "Definitional",
+      "question": "What is GDP and how is it calculated?",
+      "ground_truth": "GDP (Gross Domestic Product) is the total monetary value of all finished goods and services produced within a country's borders in a specific time period. It can be calculated using three approaches: production (sum of value added), income (sum of all incomes), or expenditure (C + I + G + NX, where C is consumption, I is investment, G is government spending, and NX is net exports).",
+      "ground_truth_source": "World Bank / IMF / Economics textbooks",
+      "ground_truth_date": "2024-01-01",
+      "difficulty": "Medium"
+    },
+    {
+      "id": "GK_F_048",
+      "domain": "General Knowledge",
+      "type": "Factual",
+      "question": "Who wrote Romeo and Juliet?",
+      "ground_truth": "William Shakespeare wrote Romeo and Juliet, believed to have been written between 1591 and 1596. It was first published in 1597.",
+      "ground_truth_source": "Encyclopaedia Britannica / Oxford Shakespeare",
+      "ground_truth_date": "2024-01-01",
+      "difficulty": "Easy"
+    },
+    {
+      "id": "GK_C_049",
+      "domain": "General Knowledge",
+      "type": "Comparative",
+      "question": "What are the differences between renewable and non-renewable energy sources?",
+      "ground_truth": "Renewable energy sources (solar, wind, hydro, geothermal, biomass) are naturally replenished and produce minimal greenhouse gas emissions. Non-renewable sources (coal, oil, natural gas, nuclear) exist in finite quantities, take millions of years to form, and fossil fuels produce significant carbon emissions when burned.",
+      "ground_truth_source": "EIA (Energy Information Administration) / IRENA",
+      "ground_truth_date": "2024-01-01",
+      "difficulty": "Easy"
+    },
+    {
+      "id": "GK_F_050",
+      "domain": "General Knowledge",
+      "type": "Factual",
+      "question": "What is the smallest country in the world by area?",
+      "ground_truth": "Vatican City is the smallest country in the world by area, covering approximately 0.44 square kilometers (0.17 square miles). It is an independent city-state enclaved within Rome, Italy.",
+      "ground_truth_source": "Encyclopaedia Britannica / United Nations",
+      "ground_truth_date": "2024-01-01",
+      "difficulty": "Easy"
+    }
+  ]
+}

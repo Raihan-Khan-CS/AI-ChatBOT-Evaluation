@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+venv/
+env/
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data (keep structure, ignore large files)
+data/responses/*.json
+data/ground_truth/*.json
+data/results/*.csv
+data/results/*.json
+data/results/figures/*.png
+!data/queries/evaluation_queries.json
+
+# Config with secrets
+configs/config_local.yaml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Model cache
+.cache/
+models/
